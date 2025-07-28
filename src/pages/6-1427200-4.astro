@@ -1,0 +1,191 @@
+---
+import Breadcrums from '../components/Breadcrums.astro';
+import Products from '../components/Products.astro';
+import Sidebar from '../components/Sidebar.astro';
+import Layout from '../layouts/Layout.astro';
+const ciscoProducts = [
+  {
+    title: "219590-4",
+    image:
+      "https://www.ds3comunicaciones.com/AMP/images/1499418-2-1.jpg",
+    href: "https://www.ds3comunicaciones.com/AMP/219590-4.html",
+    description:
+      "Cable UTP AMP Categoria 5E",
+  },
+  {
+    title: "1859345-2",
+    image:
+      "https://www.ds3comunicaciones.com/AMP/images/6-1427200-4-1.jpg",
+    href: "https://www.ds3comunicaciones.com/AMP/1859345-2.html",
+    description:
+      "Cable UTP AMP Categoria 6 Chaqueta CMR",
+  },
+  {
+    title: "1859218-2",
+    image:
+      "https://www.ds3comunicaciones.com/AMP/images/1859218-2.jpg",
+    href: "https://www.ds3comunicaciones.com/AMP/1859218-2.html",
+    description:
+      "Cable UTP AMP Categoria 6A Apantallado Chaqueta LSZH",
+  },
+  {
+    title: "18592xx-3",
+    image:
+      "https://www.ds3comunicaciones.com/AMP/images/18592xx-3_front.jpg",
+    href: "https://www.ds3comunicaciones.com/AMP/18592xx-3.html",
+    description:
+      "Patch Cord Cat 5e de 0.90 metros, marca AMP",
+  },
+  {
+    title: "219886-3",
+    image:
+      "https://www.ds3comunicaciones.com/AMP/images/219886-3_front.jpg",
+    href: "https://www.ds3comunicaciones.com/AMP/219886-3.html",
+    description:
+      "Patch Cord Cat 6 de 0.90 metros, marca AMP",
+  },
+  {
+    title: "1711096-1",
+    image:
+      "https://www.ds3comunicaciones.com/AMP/images/1711096-1_front.jpg",
+    href: "https://www.ds3comunicaciones.com/AMP/1711096-1.html",
+    description:
+      "Patch Cord Cat 6 LSZH de 1.00 metro, marca AMP",
+  },
+];
+---
+
+<Layout 
+	title="Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4" 
+	description="Sitio web de ds3comunicaciones, líder en soluciones de redes y comunicaciones. Ofrecemos productos para WiFi y extensión de señal."
+	keywords="En Peru, ANTENA HYPERLINK, internet inalambrico, ANTENA PARA INTERNET, Antena Omnidireccional,Antena de panel, Antena 5.8 GHz, Antena Sectorial, Amplificador 2.4 Ghz, WIFI PERU, venta, compra, vender, comprar, remate, remates">
+    <Breadcrums productName='6-1427200-4'/>
+	<Sidebar>
+		<div class="w-full lg:w-4/6 bg-white rounded-lg shadow">
+          <div class="mx-auto max-w-[1200px] w-full">
+            <!-- Contenedor principal del producto -->
+            <div id="information-section" class="mt-5 flex flex-col lg:flex-row gap-6 flex-wrap">
+              <!-- Sección de información e imagenes-->
+              <div class="w-full flex flex-col lg:flex-row gap-6">
+                <!-- Sección de imágenes -->
+                <div class="lg:w-1/2">
+                  <!-- Imagen principal -->
+                  <div class="bg-white rounded-lg shadow-sm p-4">
+                    <div class="w-full h-[400px] flex items-center justify-center overflow-hidden">
+                      <img id="img_main"
+                        src="/images/6-1427200-4-1.jpg"
+                        alt="Cable UTP AMP Categoria 6" class="max-h-full max-w-full object-contain cursor-pointer"
+                        onclick="viewImage(this.src)" />
+                    </div>
+
+                    <!-- Miniaturas -->
+                    <div class="flex gap-3 mt-4 justify-center">
+                      <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition">
+                        <img src="/images/6-1427200-4-1.jpg"
+                          alt="Vista 1" class="w-full h-full object-contain" onclick="toExchangeImage(this)" />
+                      </div>
+                      <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition">
+                        <img src="/images/6-1427200-4-1.jpg"
+                          alt="Vista 2" class="w-full h-full object-contain" onclick="toExchangeImage(this)" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sección de información -->
+                <div class="lg:w-full px-2">
+                  <div class="bg-white rounded-lg shadow-sm ">
+                    <h1 class="md:text-md font-bold mb-4 text-[#0D274D]">
+                      Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
+                    </h1>
+
+                    <div class="mb-6">
+                      <span class="text-2xl font-bold text-blue-600">U$ 187.00</span>
+                      <span class="text-gray-600 ml-2">por rollo</span>
+                      <a href="https://www.ds3comunicaciones.com/pedido.html"
+                        class="mt-3 inline-flex items-center gap-1 bg-blue-600 text-white font-medium rounded-md px-4 py-2 hover:bg-blue-700 transition"
+                        target="_blank">
+                        <i class="fas fa-shopping-cart"></i>
+                        Comprar ahora
+                      </a>
+                    </div>
+
+                    <div class="border-t pt-4">
+                      <h3 class="font-semibold text-md mb-3">
+                        Descripción:
+                      </h3>
+                      <div class="space-y-3 text-gray-700">
+                        <p>Los Cables AMP NetConnect categoría 6 exceden los requerimientos TIA/EIA-568-B.2-1 e ISO/IEC 11801 Clase E.</p>
+                        <p>Además cumplen con todos los requisitos de rendimiento para aplicaciones actuales y propuestos, tales como Gigabit Ethernet (1000BASE-TX), 10/100BASE-TX, Token Ring, ATM 155 Mbps, 100 Mbps TPPMD, Vídeo ISDN, analógico y digital y analógica y digital de voz (VoIP).</p>
+                        <p>AMP NetConnect categoría 6 cables UTP están disponibles en (CMR) colores estándar, incluyendo blanco, gris y azul. El embalaje es en un reel-in-box, con el estándar 1000ft libres de empalme longitudinales.</p>
+                        <p>Rendimiento del cable debe ser verificada independientemente y caracterizado a 600 MHz. Cable se suministra en un carrete-in-box. Independiente verificación del cumplimiento de inflamabilidad será NEC artículo 800 y NFPA 70, CMR (ANSI/UL 1666, IEC 332-1).</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-6">
+                      <h3 class="font-semibold text-lg mb-3">
+                        Download:
+                      </h3>
+                      <div class="flex flex-wrap gap-3">
+                        <!-- Ficha técnica PDF -->
+                        <a href="#"
+                          class="flex items-center gap-2 text-blue-600 hover:text-blue-800 border border-gray-200 rounded-md px-4 py-2 hover:bg-gray-50 transition"
+                          target="_blank" rel="noopener noreferrer" aria-label="Descargar ficha técnica en PDF">
+                          <i class="fas fa-file-pdf text-red-500" aria-hidden="true"></i>
+                          <span>Datos Técnicos</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Especificaciones técnicas en acordeón -->
+            <div class="mt-8 w-full mx-auto space-y-4">
+              <details open class="group border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                <summary class="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer transition-colors">
+                  <h3 class="font-semibold text-black flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    Especificaciones Técnicas
+                  </h3>
+                  <span class="text-blue-600 text-xs text-nowrap font-medium">Ver detalles</span>
+                </summary>
+                <div class="p-4 bg-white">
+                  <table class="w-full border-collapse">
+                    <tr class="border-b">
+                      <td class="py-2 font-semibold">Voltage</td>
+                      <td class="py-2">300VAC or VDC</td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 font-semibold">Velocidad Nominal de Propagación</td>
+                      <td class="py-2">70%</td>
+                    </tr>
+                    <tr class="border-b">
+                      <td class="py-2 font-semibold">Temperatura de Operación</td>
+                      <td class="py-2">-20°C a 60°C</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 font-semibold">Temperatura de Almacenamiento</td>
+                      <td class="py-2">-20°C a 80°C</td>
+                    </tr>
+                  </table>
+                </div>
+              </details>
+            </div>
+
+            <!-- Modal para imágenes -->
+            <div id="image-modal" class="fixed hidden inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+              <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer" onclick="closeModal()">&times;</span>
+              <img id="modal-image" class="max-w-full max-h-full" src="" alt="Imagen ampliada" />
+            </div>
+          </div>
+        </div>
+	</Sidebar>
+  <Products
+    title="También Disponible: Cable UTP AMP Categoria 5E"
+    products={ciscoProducts}
+  />
+</Layout>
